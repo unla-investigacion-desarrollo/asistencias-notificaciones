@@ -1,0 +1,6 @@
+/package
+node_modules
+/data
+package-lock.json
+/make
+npm.install.done

@@ -1,0 +1,53 @@
+{
+    "name": "@openiap/noderedagent",
+    "version": "1.5.9",
+    "description": "",
+    "main": "./src/main.js",
+    "types": "./src/main.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "ncu": "npx -y npm-check-updates",
+        "updateapilocal": "npm uninstall @openiap/nodeapi && npm i ../nodeapi",
+        "updateapidev": "npm uninstall @openiap/nodeapi && npm i openiap/nodeapi",
+        "updateapi": "npm uninstall @openiap/nodeapi && npm i @openiap/nodeapi",
+        "updatenodered": "npm uninstall node-red && npm i node-red"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/openiap/noderedagent.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": "OpenIAP ApS / Allan Zimmermann",
+    "license": "MPL-2.0",
+    "bugs": {
+        "url": "https://community.openiap.io/"
+    },
+    "homepage": "https://github.com/openiap/noderedagent",
+    "funding": "https://github.com/sponsors/skadefro",
+    "devDependencies": {
+        "typescript": "5.5.2"
+    },
+    "dependencies": {
+        "@openiap/nodeapi": "^0.0.38",
+        "@opentelemetry/exporter-metrics-otlp-grpc": "0.43.0",
+        "@opentelemetry/sdk-node": "0.43.0",
+        "compression": "1.7.4",
+        "express": "4.19.2",
+        "google-auth-library": "8.7.0",
+        "node-red": "4.0.1",
+        "passport-openidconnect": "0.1.2",
+        "pidusage": "3.0.2",
+        "request": "2.88.2",
+        "systeminformation": "5.22.11"
+    },
+    "openiap": {
+        "language": "nodejs",
+        "typescript": true,
+        "daemon": true,
+        "chromium": false
+    }
+}
